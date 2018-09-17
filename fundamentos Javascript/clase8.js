@@ -24,3 +24,11 @@ function imprimirNombreyEdad({nombre, edad}){
 imprimirNombreMayusculas(persona)
 imprimirNombreyEdad(claudio)
 //console.log(`Nombre fuera de la funcion:${nombre}`)
+
+function cumpleanios(persona){
+  return {
+    ...persona,
+    edad:persona.edad +1
+  }
+  //persona.edad +=1
+}
