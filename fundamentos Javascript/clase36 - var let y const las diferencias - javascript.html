@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 34 - Multiples Promesas en paralelo</title>
+  </head>
+  <body>
+    <script>
+      var claudio ={
+        nombre: 'Claudio',
+        apellido: 'Sosa',
+        edad: 39
+      }
+
+      function esMayorDeEdad(persona){
+        const MAYORIA_DE_EDAD = 18
+        if(persona.edad > MAYORIA_DE_EDAD){
+          var mensaje = 'Es mayor de Edad'
+        }else{
+          var mensaje = 'Es menor de Edad'
+        }
+        console.log(mensaje)
+      }
+
+      //esMayorDeEdad(claudio)
+
+      for(let i = 0; i < 10; i++){
+        console.log(i)
+      }
+
+      console.log(`Termino el for el valor de i es ${i}`)
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>clase41 - estructura de datos inmutables</title>
+  </head>
+  <body>
+    <script>
+      const claudio = {
+        nombre: 'Claudio',
+        apellido: 'Sosa',
+        edad: 28
+      }
+      //const cumpleanios = persona => persona.edad++
+
+      const cumpleaniosInmutable = persona => ({
+        ...persona,
+        edad:persona.edad+1
+      })
+
+    </script>
+
+  </body>
+
+</html>
